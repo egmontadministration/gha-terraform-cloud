@@ -1,0 +1,18 @@
+mode: Mainline
+commit-message-incrementing: Enabled
+major-version-bump-message: '\+semver:\s?(breaking|major)'
+minor-version-bump-message: '\+semver:\s?(feature|minor)'
+patch-version-bump-message: '\+semver:\s?(fix|patch)'
+
+branches:
+  main:
+    tag: '' # Never add a branch tag to versions from the main/master branch
+    regex: ^main$
+    increment: Patch # Always bump the patch version
+    is-release-branch: true
+  pull-request:
+    regex: ^(pull|pull\-requests|pr)[/-]
+    tag: pr
+    increment: Inherit # Find the branch where the current branch was branched from and use its values for increment
+    is-release-branch: false
+    is-mainline: false

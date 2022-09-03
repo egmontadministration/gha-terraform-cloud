@@ -1,0 +1,7 @@
+{
+  "tfc_token": "<secret>",
+  "tfc_organization": "egmont-it",
+  "tfc_client_name": "EgmontAdministration GitHub",
+  "gh_organization": "egmontadministration",
+  "gh_repository": "terraform-aws-cloudfront"
+}
