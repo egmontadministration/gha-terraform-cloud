@@ -8,4 +8,5 @@ export TFC_CLIENT_NAME="$3"
 export GH_ORGANIZATION="$4"
 export GH_REPOSITORY="$5"
 
+cd /usr/src/app
 python main.py
