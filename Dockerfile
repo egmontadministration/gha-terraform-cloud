@@ -8,5 +8,6 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY *.py .
+COPY entrypoint.sh .
 
-CMD [ "python", "./main.py" ]
+ENTRYPOINT ["/entrypoint.sh"]

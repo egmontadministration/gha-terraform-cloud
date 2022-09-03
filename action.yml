@@ -1,0 +1,17 @@
+name: "Terraform Cloud Action"
+description: "Action for working with Terraform Cloud"
+author: "Rasmus Bo Jørgensen"
+inputs:
+  tfc_token:
+    description: "Terraform Cloud API token"
+  tfc_organization:
+    description: "Name of the Terraform Cloud organization"
+  tfc_client:
+    description: "Name of the VCS client in Terraform Cloud to register the module with"
+  github_organization:
+    description: "Name of the GitHub organization containing the repository"
+  repository:
+    description: "Name of the GitHub repository containing the Terraform module"
+runs:
+  using: "docker"
+  image: "Dockerfile"

@@ -53,7 +53,6 @@ jobs:
           push: true
           tags: docker.pkg.github.com/egmontadministration/gha-terraform-cloud/gha-terraform-cloud:${{ needs.calculate-version.outputs.semVer }}
 
-
   tag_semver:
     name: Tag semver version
     runs-on: ubuntu-latest
