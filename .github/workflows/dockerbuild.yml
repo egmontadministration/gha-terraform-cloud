@@ -28,7 +28,7 @@ jobs:
         id: gitversion
         with:
           useConfigFile: true
-          configFilePath: .github/gitversion.yml
+          configFilePath: gitversion.yml
 
   build:
     name: Build
