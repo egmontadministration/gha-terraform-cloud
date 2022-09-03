@@ -11,6 +11,6 @@ COPY main.py .
 COPY config.py .
 COPY tfcloud.py .
 
-COPY entrypoint.sh .
+COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
